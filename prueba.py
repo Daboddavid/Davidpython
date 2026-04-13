@@ -1,6 +1,6 @@
-print("hola mundardooooo god amiwwoooooo")
+# print("hola mundardooooo god amiwwoooooo")
 
-# creando variables
+# # creando variables
 Titulo="clima de hoy" #string
 # mas me crece
 diadelmes=13 #int
@@ -20,3 +20,4 @@ if llueve:
     print("tiene que llevar paraguas")
 else:
     print("puede llevar poleras sin mangas")
+
