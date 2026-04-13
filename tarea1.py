@@ -8,18 +8,35 @@
 # nacionalidad | chilena: +300.000 , extranjera: +0
 
 
-chl=300.000
-basico= x1
-medio=x1.3
-superior=x1.5
+
+credito=0
 
 
+ingreso=int(input("ingrese su sueldo: "))
+print("ingrese su nacionalidad")
+print("1) Basico")
+print("2) Medio")
+print("3) Superior")
+edu=int(input("nivel educacional: "))
+nacionalidad=input("ingrese su nacionalidad (chilena/otro): ")
 
+if ingreso>500000 and ingreso<= 1000000:
+    credito=credito+300000
+elif ingreso>1000001 and ingreso<= 1500001:
+    credito=credito+1000000
+else:
+    print("no obtiene creditos por su ingreso")
 
-print("cuanto es su ingreso")
-cred=int(input("ingreso: "))
-print("cual es su nacionalidad")
-nac=input("nacionalidad: ")
-print("cual es su nivel educacional")
-nved=input("nivel educacional: ")
+if edu==1:
+    print("no hay creditos por su nivel de educacion")
+elif edu==2:
+    credito=credito*1.3
+elif edu==3:
+    credito=credito*1.5
 
+if nacionalidad=="chilena":
+    credito=credito+300000
+else:
+    print("no existen creditos por su nacionalidad")
+
+print("su puntaje de credito es: ", credito)
