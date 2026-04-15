@@ -20,7 +20,7 @@ for i in nombre:
     print(i)
     if i in "aeiouAEOIU":
         vocales+=1
-else:
+    else:
         conso+=1
 
 
