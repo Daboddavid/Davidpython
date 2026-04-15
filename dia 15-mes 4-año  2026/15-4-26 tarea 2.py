@@ -5,12 +5,12 @@
 
 alumno=int(input("ingrese la cantidad de alumnos: "))
 sumaa=0
-for e in range(alumno):
+for i in range(alumno):
 
-notas=int(input("ingrese la cantidad de notas: "))
-sumap=0
-for i in range (notas):
-    n=float(input("ingrese la nota: "))
-    sumap=sumap+n
+    notas=int(input("ingrese la cantidad de notas del alumno {i+1}: "))
+    sumap=0
+    for j in range (notas):
+        n=float(input("ingrese la nota: "))
+        sumap=sumap+n
 
-prom=suma/notas
+    prom=suma/notas
