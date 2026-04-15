@@ -19,5 +19,3 @@
 mult=int(input("ingrese un numero para multiplicar: "))
 for i in range (10):
     print(mult,"X" ,i+1, "=" , mult*(i+1))
-
-print()
