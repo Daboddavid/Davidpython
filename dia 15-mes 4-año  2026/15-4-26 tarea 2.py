@@ -5,6 +5,8 @@
 
 alumno=int(input("ingrese la cantidad de alumnos: "))
 sumaa=0
+apro=0
+repro=0
 for i in range(alumno):
 
     notas=int(input("ingrese la cantidad de notas del alumno {i+1}: "))
@@ -12,5 +14,15 @@ for i in range(alumno):
     for j in range (notas):
         n=float(input("ingrese la nota: "))
         sumap=sumap+n
+    prom=sumap/notas
+    print("el promedio de las notas es: ", prom)
+    if prom<=4:
+        print("alumno aprobado")
+        apro+=1
+    else:
+        print("alumno reprobado")
+        repro+=1
 
-    prom=suma/notas
+print("la cantidad de alumnos que tomaron prueba fueron:",alumno)
+print("la cantidad de alumnos aprobados es: ", apro )
+print("la cantidad de alumnos reprobado es ", repro)
