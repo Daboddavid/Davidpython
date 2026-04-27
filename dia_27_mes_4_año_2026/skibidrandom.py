@@ -83,7 +83,7 @@ while hp1>=0 and hp2>=0:
         hp1-=g
         print(f"el hp de {nam1} es {hp1}")
         time.sleep(1)
-tunro+=1
+turno+=1
 print(nam1, "█"*hp1)
 print(nam2, "█"*hp2)
 
