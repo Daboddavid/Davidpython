@@ -24,4 +24,7 @@ code=3434
 pwd=int(input("ingrese su pin numerico: "))
 
 while code!=pwd:
-    print()
+    print("codigo incorrecto intente denuevo")
+    pwd=int(input("ingrese su pin numerico: "))
+
+print("bienvenido al sistema")
