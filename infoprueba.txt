@@ -1,0 +1,7 @@
+Uso de variables 
+Condiciones (if)
+Bucles (for ,while)
+Random
+Menus (match)
+Validaciones
+Contadores y acomuladores
