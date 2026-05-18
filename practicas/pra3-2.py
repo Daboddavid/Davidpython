@@ -12,24 +12,33 @@ while True:
     print("4) Historial ocupaciones")
     print("5) salir")
     print("------------------------------------")
-    op=int(input())
+    while True:
+        try:
+            op=int(input())
+            break
+        except:
+            print("ingrese numeros enteros")
     match op:
         case 1:
             print(f"la cantidad de espacio disponible es {espacio}")
         case 2:
             poner=int(input("¿cuantos libros desea poner?: "))
-            if espacio>90:
+            if espacio>=90:
                 print("espacio maximo alcanzado")
-            espacio=espacio+poner
-            ph+=1
+            else:
+                espacio=espacio+poner
+                ph+=1
         case 3:
             sacar=int(input("¿cuantos libros desea sacar?: "))
-            espacio=espacio-sacar
-            rh+=1
+            if espacio<0:
+                print("no se pueden sacar mas libros")
+            else:
+                espacio=espacio-sacar
+                rh+=1
         case 4:
             print("el historial de movimientos es: ")
-            print(f"la cantidad de retiros es {rh} en esta sesion")
-            print(f"la cantidad de ocupados es {ph} en esta sesion")
+            print(f"la cantidad de acciones de retiros es {rh} en esta sesion")
+            print(f"la cantidad de acciones de agregado es {ph} en esta sesion")
         case 5:
             print("saliendo del programa")
             break
