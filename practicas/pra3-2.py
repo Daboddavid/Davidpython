@@ -22,12 +22,15 @@ while True:
         case 1:
             print(f"la cantidad de espacio disponible es {espacio}")
         case 2:
-            poner=int(input("¿cuantos libros desea poner?: "))
-            if espacio>=90:
-                print("espacio maximo alcanzado")
-            else:
-                espacio=espacio+poner
-                ph+=1
+            try:
+                poner=int(input("¿cuantos libros desea poner?: "))
+                if espacio>=90:
+                    print("espacio maximo alcanzado")
+                else:
+                    espacio=espacio+poner
+                    ph+=1
+            except:
+                print("ingrese numeros porfavor!")
         case 3:
             sacar=int(input("¿cuantos libros desea sacar?: "))
             if espacio<0:

@@ -4,4 +4,13 @@ Bucles (for ,while)
 Random
 Menus (match)
 Validaciones
-Contadores y acomuladores
+Contadores y 
+
+
+
+prueba 3
+Menus
+ciclo while
+estructuras de decision
+try - except
+ciclo for

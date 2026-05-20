@@ -1,7 +1,8 @@
 categoria=0
-classif=0
 ijo=0
-
+M=0
+T=0
+E=0
 
 
 ijo=int(input("ingrese la cantidad de juegos a evaluar: "))
@@ -31,14 +32,19 @@ for i in range (ijo):
         edclas=int(input("ingrese para que edad esta dirigida este juego: "))
         if edclas <12:
             print(f"{njuego} esta clasificado para todos")
-            classif="E para todos"
+            
+            E+=1
         elif edclas>=12 and edclas<17:
             print(f"{njuego} esta clasificado para adolescentes (+12)")
-            classif="T para adolescentes"
+            
+            T+=1
         else:
             print(f"{njuego} esta clasificado para personas mayores de 18 (+18)")
-            classif="M para adultos"
+           
+            M+=1
         break
 
+print(f"la cantidad de juegos fueron {ijo} ")
+print(f"de esos juegos habian , {E} para todos , {T} para adolescentes y {M} para adultos")
 
 
