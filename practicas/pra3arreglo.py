@@ -4,8 +4,12 @@ M=0
 T=0
 E=0
 
-
-ijo=int(input("ingrese la cantidad de juegos a evaluar: "))
+while True:
+    try:
+        ijo=int(input("ingrese la cantidad de juegos a evaluar: "))
+        break
+    except ValueError:
+        print("ingrese numeros porfavor!!")
 for i in range (ijo):
     while True:
             njuego=input("ingrese nombre del juego: ").upper().replace(" ","")
