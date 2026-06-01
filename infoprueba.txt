@@ -14,3 +14,7 @@ ciclo while
 estructuras de decision
 try - except
 ciclo for
+
+
+prueba 4 (22/06)
+colecciones
