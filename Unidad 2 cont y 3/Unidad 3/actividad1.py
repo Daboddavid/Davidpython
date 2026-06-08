@@ -7,8 +7,8 @@ for i in range(notas):
     notae=lista.append(float(input(f"ingrese la nota {i+1}: ")))
 
 
-def prom(lista):
-    sum(lista)/len(lista)
+def prom(nao):
+    sum(nao)/len(nao)
     return
 
 
